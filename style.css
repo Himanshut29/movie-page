@@ -1,0 +1,236 @@
+/* CSS reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* CSS variabels */
+:root {
+    --navbar-height: 60px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* navaigation bar */
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+
+#navbar {
+    display: flex;
+    position: sticky;
+    align-items: center;
+    top: 0px;
+    /* justify-content: center; */
+    /* padding: 10px; */
+}
+
+#navbar ul {
+    display: flex;
+
+}
+
+#navbar ul li {
+    /* display: flex; */
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+#navbar ul li a {
+    padding: 8px 14px;
+    border-radius: 10px;
+    display: block;
+    color:white;
+    font-weight: bold;
+    font-family: "IM Fell Great Primer SC", serif;
+}
+
+#navbar ul li a:hover {
+    background-color: bisque;
+    color: chocolate;
+}
+
+/* logo and logo image styling */
+#logo {
+    margin: 10px 34px;
+}
+
+#logo img {
+    height: 60px;
+    margin: 3px 6px;
+}
+
+/* section home styling */
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0px;
+    left: 0px;
+    padding: 5px 140px;
+    height: 550px;
+}
+
+#home::before {
+    content: "";
+    background: url("../bg1.jpg") no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 91%;
+    width: 100%;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+    font-family: "Roboto Slab", serif;
+
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    font-family: "Josefin Sans", sans-serif;
+
+}
+
+/* service section */
+#services {
+    margin: 34px;
+    display: flex;
+}
+
+#services .box {
+    border: 2px solid brown;
+    padding: 11px;
+    margin: -5px 12px;
+    background-color: #dccece;
+}
+
+#services .box img {
+    height: 110px;
+    margin: auto;
+    display: block;
+
+}
+
+#services .box p {
+    font-family: "Josefin Sans", sans-serif;
+
+}
+
+/* clients section */
+#streaming-library {
+    /* height: 347px; */
+    position: relative;
+}
+
+#streaming-library::before {
+    content: "";
+    background: url("../img10.jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+#clients {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#clients img {
+    height: 74px;
+    /* border: 2px solid red; */
+
+}
+
+.clients-items {
+    padding: 20px 25px;
+
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* contactUS */
+#contactUs::before {
+    content: "";
+    background: url("../img11.jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 76%;
+    width: 100%;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: "Josefin Sans", sans-serif;
+ }
+ 
+
+/* Utility classes */
+.h-primary {
+    font-size: 2.5rem;
+    padding: 12px;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.h-secondary {
+    font-size: 1.2rem;
+    padding: 12px;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.btn {
+    padding: 4px 16px;
+    border: 3px solid black;
+    background-color: burlywood;
+    color: rgb(214, 70, 3);
+    font-size: 1rem;
+    margin: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}
